@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: radial-gradient(circle, rgb(100, 0, 0), rgb(0, 0, 0));
+}
+
+.container {
+    /* max-width: 500px; */
+    margin: auto;
+    margin-top: 60px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-sign-in {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.sign-in {
+    border: white solid 1px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey , -1px -1px 10px grey;
+    padding: 20px 30px;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+
+input {
+    color: black;
+}
+
+input[type="text"],input[type="password"]{
+    width: 500px;
+    height: 40px;
+    padding-left:20px ;
+    border: white solid 1px;
+    border-radius: 5px;
+    display: block;
+}
+
+#remember {
+    display: inline;
+}
+
+input[type="password"] {
+    margin-bottom: 40px;
+}
+
+button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(119, 0, 0);
+    display:block;
+    height: 50px;
+    width: 100px;
+    margin: auto;
+    border: white solid 1px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(202, 13, 13);
+    box-shadow:inset 1 1 5px rgb(27, 17, 71);
+}
+
+a {
+    text-decoration: none;
+    position: absolute;
+    right: 15%;
+}
+
+a:hover {
+    color: red;
+}
+
+
+@media (max-width:650px) {
+    input[type="text"],input[type="password"] {
+
+        width: 250px;
+
+    }
+}
