@@ -8,6 +8,22 @@
     <div class="container">
         <div class="sign-in">
             <h2 class="text-sign-in">Sign up</h2>
+            <?php
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"] == "emptyfields") {
+                        echo "<p class='errorMessage' >Please fill all fields</p>";
+                    }
+                    if ($_GET["error"] == "invalidemail") {
+                        echo "<p class='errorMessage' >Invalid email</p>";
+                    }
+                    if ($_GET["error"] == "passwordcheck") {
+                        echo "<p class='errorMessage' >Password repeat error</p>";
+                    }
+                    if ($_GET["error"] == "useroremailtaken") {
+                        echo "<p class='errorMessage' >This username or email is taken</p>";
+                    }
+                }
+            ?>
             <form action="function/register_submit.php" method="POST">
                 <label for="username">UserName:</label>
                 <input type="text" name="username" placeholder="username" maxlength="30">

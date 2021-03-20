@@ -38,6 +38,21 @@ body {
     position: relative;
 }
 
+.error {
+    margin: 20px 0px;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+.errorMessage {
+    margin: 20px 0px;
+    color: green;
+    width: 100%;
+    text-align: center;
+}
+
+
 label {
     display: block;
     margin-bottom: 5px;

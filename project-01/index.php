@@ -8,7 +8,17 @@
     <div class="container">
         <div class="sign-in">
             <h2 class="text-sign-in">Sign in</h2>
-            <form action="function/sign_in.php" method="POST">
+            <?php
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"] == "wrongpassword") {
+                        echo "<p class='error' >Wrong Password</p>";
+                    }
+                    if ($_GET["error"] == "nosuchuser") {
+                        echo "<p class='error' >Wrong Username</p>";
+                    }
+                }
+            ?>
+            <form  action="function/sign_in.php" method="POST">
                 <label for="username">UserName:</label>
                 <input type="text" name="username" placeholder="username" maxlength="30">
                 <label for="password">Password:</label>

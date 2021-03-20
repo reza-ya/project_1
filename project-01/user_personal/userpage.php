@@ -5,6 +5,13 @@
 
 
 <main>
+    <?php   
+        if (isset($_GET["message"])) {
+            if ($_GET["message"] == "uploadsuccess") {
+                echo "<p class='errorMessage' >Your post successfully created</p>";
+            }
+        }
+    ?>
     <div class="container">
         <a href="create_post.php?message=create">
         <div class="option create">

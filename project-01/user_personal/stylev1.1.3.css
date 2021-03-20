@@ -11,6 +11,13 @@ a {
     text-align: center;
 }
 
+.errorMessage {
+  margin: 20px 0px;
+  color: green;
+  width: 100%;
+  text-align: center;
+}
+
 
 body {
   background-image: radial-gradient(circle,rgb(148, 3, 3),rgb(0, 0, 0));
